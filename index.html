@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+    <!-- Main Heading -->
+    <h1>Lab: Pixel Art Maker</h1>
+    <div class="container text-center mb-5">
+        <div class="row">
+            <!-- Size Picker -->
+            <div class="col-6">
+                <div class="size-picker mb-5">
+                    <h2>Choose Grid Size</h2>
+                    <form id="sizePicker">
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- Height -->
+                                <div class="height">
+                                    <span class="d-block mb-2">Grid Height</span>
+                                    <input type="number" id="inputHeight" class="d-block mx-auto" name="height" min="1" value="10">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Width -->
+                                <div class="wdith">
+                                    <span class="d-block mb-2" >Grid Width</span>
+                                    <input type="number" id="inputWidth" class="d-block mx-auto" name="height" min="1" value="10">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Color Picker -->
+            <div class="col-6">
+                <div class="color-picker">
+                    <h2>Pick A Color</h2>
+                    <label for="colorPicker">
+                       <img src="color-picker.png">
+                       <input type="color" id="colorPicker">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Create and reset -->
+    <div class="creat-and-reset">
+        <!-- Creat -->
+        <input type="submit" value="Create Grids">
+        <!-- Clear -->
+        <input type="reset" value="Clear">
+    </div>
+
+    <!-- Design Canvas -->
+    <div class="design-canvas">
+        <h2>Design Canvas</h2>
+        <table id="pixelCanvas">
+        </table>
+    </div>
+  
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">	</script>
+    <!-- Design JS -->
+    <script src="designs.js"></script>
+</body>
+
+</html>
